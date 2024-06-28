@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel=icon href=https://www.fortinet.com/etc/designs/fortinet/favicon.ico type=image/x-icon>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+
+<body>
+    <h1>REGISTRATION FORM</h1>
+    <form name="RegForm" onsubmit="return validateForm()" action="/action_page.php">
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name" 
+                placeholder="Enter your full name" />
+            <span id="name-error" class="error-message"></span>
+        </p>
+        <p>
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="Company" />
+            <span id="company-error" class="error-message"></span>
+        </p>
+        <p>
+            <label for="email">E-mail Address:</label>
+            <input type="text" id="email" name="EMail" />
+            <span id="email-error" class="error-message"></span>
+        </p>
+        <p>
+            <input type="submit" value="Send" name="Submit" />
+        </p>
+    <input type="hidden" name="uid" id="uid">
+    </form>
+    <script src="script.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5RZBH288ST"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5RZBH288ST', { 'user_id': uid });
+</script>
+</body>
+
+</html>
+
