@@ -4,7 +4,7 @@ function validateForm() {
     const email = document.getElementById("email").value;
     const nameError = document.getElementById("name-error");
     const uid = crypto.randomUUID();
-    document.getElementById('uid').value = uid;
+    document.getElementById('uid').setAttribute("value", uid);
     
     const companyError = document.getElementById(
         "company-error"
