@@ -33,8 +33,12 @@
         <p>
             <input type="submit" value="Send" name="Submit" />
         </p>
-    <input type="hidden" name="uid" id="uid">
+    <input type="hidden" name="uid" id="uid" value="">
     </form>
+<script>
+    const uuid = crypto.randomUUID();
+    document.getElementById('uid').setAttribute("value", uuid);
+</script>
     <script src="script.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5RZBH288ST"></script>
 <script>

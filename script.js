@@ -3,8 +3,8 @@ function validateForm() {
     const company = document.getElementById("company").value;
     const email = document.getElementById("email").value;
     const nameError = document.getElementById("name-error");
-    const uuid = crypto.randomUUID();
-    document.getElementById('uid').setAttribute("value", uuid);
+    //var uuid = crypto.randomUUID();
+    //document.getElementById('uid').setAttribute("value", uuid);
     
     const companyError = document.getElementById(
         "company-error"
